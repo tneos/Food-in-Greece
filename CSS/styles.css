@@ -1,0 +1,122 @@
+:root {
+    --lightBlue: #667a8a;
+    --myGrey: #83a1b9;
+    --darkBlue: #0d1f2d;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.navbar-nav {
+
+    width: 70%
+}
+
+
+.navbar-brand img {
+    width: 70%;
+}
+
+.nav-item {
+    margin: auto 3%;
+}
+
+.nav-link {
+    font-family: 'Bad Script', cursive;
+    font-size: 18px;
+}
+
+.dropdown-menu {
+    font-family: 'Bad Script', cursive;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(187, 174, 174, 0.4);
+}
+.carousel {
+    background-color: #83a1b9;
+}
+
+.carousel-inner {
+    width: 40%;
+    margin: 0 30%;
+}
+
+
+.details {
+   /* Fallback for web browsers that doesn't support RGBa */
+   background: rgb(0, 0, 0);
+   /* RGBa with 0.6 opacity */
+   background: rgba(214, 214, 214, 0.4);
+   color: #000;
+   font-weight: 400;
+   font-size: 15px;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.latest_recipes {
+    font-family: 'Bad Script', cursive;
+    font-size: 35px;
+    position: relative;
+    text-align: center;
+    margin-top: 4%;
+}
+
+
+.content {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-areas: 'pic pic text text text text';
+}
+
+.rounded {
+    grid-area: pic;
+    width: 400px;
+    margin: 1%;
+}
+
+.description {
+    grid-area: text;
+}
+
+.btn {
+    box-shadow: 3px 3px 5px #999;
+}
+
+.container-fluid a {
+    margin: auto 5%;
+}
+
+#name {
+  font-size: 0.75rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .carousel-inner {
+        width: 80%;
+        margin: 0 10%;
+    }
+    .navbar-brand img {
+        position: relative;
+    }
+    .content {
+        display: block;
+        margin-top: 2%;
+
+    }
+
+    .rounded {
+        width: 70%;
+        margin: auto 13%;
+    }
+
+    .description {
+       width: 90%;
+       margin: auto 5%;
+    }
+}
